@@ -7,6 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Entidades\**" />
+    <Compile Remove="Services\**" />
+    <Content Remove="Entidades\**" />
+    <Content Remove="Services\**" />
+    <EmbeddedResource Remove="Entidades\**" />
+    <EmbeddedResource Remove="Services\**" />
+    <None Remove="Entidades\**" />
+    <None Remove="Services\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.19" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.19" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.11" />
